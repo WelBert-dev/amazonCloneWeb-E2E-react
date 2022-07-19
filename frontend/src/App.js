@@ -1,14 +1,14 @@
 import React from 'react';
-import data from './data';
+import { Outlet } from 'react-router-dom';
 
-import MainCardProduct from './components/MainCardProduct';
+import HomeScreen from './screens/HomeScreen';
 
 function App() {
   return (
     <div className="main-gridContainer">
         <header className="row">
             <div>
-                <a className="brand" href="index.html">amazon</a>
+                <a className="brand" href="/">amazon</a>
             </div>
             <div>
                 <a href="/cart">Carrinho</a>
@@ -16,19 +16,10 @@ function App() {
             </div>
         </header>
         <main>
-            <div className="row center">
-              {
-                data.products.map(product => (
-                  <MainCardProduct key={product._id} product={product}/>
-                ))
-              }
-                
-            </div>
+          <Outlet/>
         </main>
-        <footer className="row center" >
-            Open License GPLv3
-        </footer>
-    </div>
+    </div>    
+    
   );
 }
 

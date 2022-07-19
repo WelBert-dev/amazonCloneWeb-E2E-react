@@ -2,10 +2,9 @@ import React from 'react';
 
 import "./MainRating.css";
 
-export default function(props) {
+export default function MainRating(props) {
     const { rating, numReviews } = props;
 
-    console.log(props);
     return (
         <div className="card-rating" >    
             <span><i className={ rating >= 1 ?"fa fa-star"
