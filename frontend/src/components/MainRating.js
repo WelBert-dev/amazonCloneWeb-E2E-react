@@ -33,6 +33,9 @@ export default function(props) {
                                 :"fa fa-star-o"} 
                     >
                     </i></span>
+            <span>
+                {numReviews + ' reviews'}
+            </span>
         </div>
     )
 }
