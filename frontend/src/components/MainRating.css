@@ -3,3 +3,7 @@
     margin: 0.1rem;
   }
   
+.card-rating span:last-child {
+  color: #404040;
+}
+  
