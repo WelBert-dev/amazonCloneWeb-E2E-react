@@ -7,7 +7,7 @@ const data = {
             image: '/images/pain.png',
             price: 120,
             brand: 'Nike',
-            rating: 4.5,
+            rating: 2.5,
             numReviews: 10,
             description: 'high quality product'
         },
