@@ -10,7 +10,7 @@ export default function MainCardProduct(props)
     const { product, showLink = true } = props;
 
     return (
-        <div key={product._id} className="card">
+        <div key={product._id} className="card w-20perCent">
             <Link to={ showLink ? `/product/${product._id}`: '#'}>
                 <img className="medium" src={product.image} alt={product.description} />
                 <div className="card-body" >

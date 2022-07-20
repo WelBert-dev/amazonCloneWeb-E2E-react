@@ -76,32 +76,6 @@ li {
   margin-top: 1rem;
 }
 
-button {
-  padding:1rem;
-  border-radius: 0.5rem;
-  border: 0.1rem #a4a4a4 solid;
-  font-size: 1.6rem;
-  font-family: Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #f8f8f8;
-  cursor: pointer;
-}
-
-button:hover {
-  border: 0.1rem solid #404040;
-}
-
-button.primary {
-  background-color: #f0c040;
-}
-
-button.block {
-  width: 100%;
-}
-
-
-
 /* Main-header Area */
 
 .card {
@@ -109,6 +83,10 @@ button.block {
   background-color: #f8f8f8;
   border-radius: 0.5rem;
   margin: 1rem;
+}
+
+.w-20perCent {
+  width: 20%;
 }
 
 header a {
@@ -144,14 +122,10 @@ img {
 }
 
 img.medium {
-  max-width: 26rem;
+  max-width: 15rem;
   width: 100%;
-  max-height: 36rem;
+  max-height: 19rem;
   padding: 0.5rem;
-}
-
-img.large {
-  width: 100%;
 }
 
 /* Main-card Area */
