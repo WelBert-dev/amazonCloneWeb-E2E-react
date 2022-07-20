@@ -1,5 +1,5 @@
 html {
-  font: 62.5%;
+  font-size: 70%;
   box-sizing: border-box;
 }
 
@@ -66,7 +66,28 @@ a:hover {
   color: #ff8000;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+li {
+  margin-top: 1rem;
+}
+
 /* Main-header Area */
+
+.card {
+  border: 0.1rem #c0c0c0 solid;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+.w-20perCent {
+  width: 20%;
+}
 
 header a {
   color: #fff;
@@ -90,6 +111,10 @@ a.brand {
   justify-content: center;
 }
 
+.row.top {
+  align-items: flex-start;
+}
+
 /* Image commom */
 
 img {
@@ -97,9 +122,9 @@ img {
 }
 
 img.medium {
-  max-width: 25rem;
+  max-width: 15rem;
   width: 100%;
-  max-height: 18rem;
+  max-height: 19rem;
   padding: 0.5rem;
 }
 
@@ -109,4 +134,14 @@ h2.noPadding {
   padding: 0;
 }
 
-/* Cadê rating */
+/* Alert */
+
+.success {
+  color: #20a020;
+  font-weight: bold;
+}
+
+.error {
+  color: #a02020;
+  font-weight: bold;
+}
