@@ -16,6 +16,9 @@ function App() {
         <main>
           <Outlet/>
         </main>
+        <footer className="row center">
+          Open Licence GPLv3
+        </footer>
     </div>    
     
   );

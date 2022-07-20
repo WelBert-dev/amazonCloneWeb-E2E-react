@@ -19,12 +19,12 @@ export default function ProductScreen() {
     }
     return (
         <div>
-            <Link to="/">Back to result</Link>
+            <Link className="pleft-1rem" to="/">Back to result</Link>
             <div className="row top">
                 <div className="col-2">
                     <img className="large" src={productSearched.image} alt={productSearched.name}/>
                 </div>
-                <div className="col-1">
+                <div className="col-1 pleft-1rem">
                     <ul>
                         <li>
                             <h1>{productSearched.name}</h1>
