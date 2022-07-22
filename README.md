@@ -77,3 +77,9 @@ Step by Step for building:
     8. use them 2 new components in frontend/src/screens/HomeScreen.js
     9. create a variant class '.alert-danger' and use in MessageBox component from HomeScreen page
 
+7. Install ESlint for code linting (ajuda a manter o padrão no código)
+    1. Install VSCode eslint extension
+    2. cd amazonClone; npm install -D eslint
+    3. run ./node_modules/.bin/eslint --init 
+    4. Create ./frontend/.env
+    5. Add SKIP_PREFLIGHT_CHECK=true 
