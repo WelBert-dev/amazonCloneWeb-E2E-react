@@ -6,8 +6,6 @@ import { Link, useParams } from 'react-router-dom';
 
 import data from '../data';
 
-import './ProductScreen.css';
-
 export default function ProductScreen() {
 
     const {id} = useParams();

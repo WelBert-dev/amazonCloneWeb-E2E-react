@@ -1,7 +1,5 @@
 import React from 'react';
 
-import "./MainRating.css";
-
 export default function MainRating(props) {
     const { rating, numReviews } = props;
 

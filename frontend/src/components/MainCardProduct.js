@@ -2,7 +2,6 @@ import React from 'react';
 
 import MainRating from './MainRating.js';
 
-import './MainCardProduct.css';
 import { Link } from 'react-router-dom';
 
 export default function MainCardProduct(props) 
