@@ -54,11 +54,11 @@ Step by Step for building:
     6. npm install nodemon (for auto re-running the aplication) in root folder (amazonClone)
     7. add start command as node backend/server.js in amazonClone/package.json -> scripts -> "start": nodemon --watch backend --exec node --experimental-modules backend/server.js
     8. require express
-    9. - create route for "/" return "backend is ready." in backend/server.js
-    10. - move data.js from frontend to backend/server.js
-    11. - create route for "/api/products" in backend/server.js (GET)
-    12. - return products
-    13. - run npm start 
+    9. create route for "/" return "backend is ready." in backend/server.js
+    10. move data.js from frontend to backend/server.js
+    11. create route for "/api/products" in backend/server.js (GET)
+    12. return products
+    13. run npm start 
     
 6. Load Products from Backend (GET "/api/products") in Frontend (and remove data.js in Frontend)
     1. Change the frontend/package.json -> set "proxy":"http://127.0.0.1:5000"
@@ -71,3 +71,9 @@ Step by Step for building:
             3. call the there function in this.
         3. Change and remove data.js in this.
     4. Save All and new terminal -> amazonClone -> npm start and new terminal -> amazonClone/frontend -> npm start (for running the backend and frontend servers)
+    5. create frontend/src/components/LoadingBox.js
+    6. create frontend/src/components/MessageBox.js
+    7. move ALL styles to frontend/src/index.css
+    8. use them 2 new components in frontend/src/screens/HomeScreen.js
+    9. create a variant class '.alert-danger' and use in MessageBox component from HomeScreen page
+
