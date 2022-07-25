@@ -83,3 +83,20 @@ Step by Step for building:
     3. run ./node_modules/.bin/eslint --init 
     4. Create ./frontend/.env
     5. Add SKIP_PREFLIGHT_CHECK=true 
+    6. CTRL + SHIFT + P -> eslint -> for config eslint 
+
+8. Add Redux to HomeScreen (page)
+    1. cd amazonClone/frontend; npm install redux react-redux
+    2. create /frontend/src/store.js
+        1. initialState = {products: []}
+        2. reducer = (state, action) => switch LOAD_PRODUCTS: {products: action.payload}
+        3. export default createStore(reducer, initialState)
+    3. Wrap with <Provider store={store}> in frontend/src/index.js for injection the store on app 
+    4. Install the Redux DevTools extension for browser by developer suport
+    5. npm install redux-thunk (thunk = conversão) 
+        1. conceituando: https://www.digitalocean.com/community/tutorials/redux-redux-thunk-pt
+    5. Edit HomeScreen.js
+    6. shopName = useSelector(state => state.products)
+    7. const dispatch = useDispatch()
+    8. useEffect(() => dispatch({type: LOAD_PRODUCTS, payload: data}))
+    9. Add store to index.js
