@@ -5,6 +5,8 @@ import MainCardProduct from '../components/MainCardProduct';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 
+import dataStore from  '../data';
+
 export default function HomeScreen() {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -15,7 +17,7 @@ export default function HomeScreen() {
         try 
         {
           setLoading(true);
-          const { data } = await axios.get("/api/products");
+          const data  = dataStore.products;
           setProducts(data);
           setLoading(false);
         }

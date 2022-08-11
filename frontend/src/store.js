@@ -1,8 +1,11 @@
-import React from 'react'
+import { createStore } from 'redux';
+import data from "./data";
 
-export default function store() {
-    return (
-    <div>store</div>
-    )
-}
+const initialState = {};
+const reducer = (state, action) => {
+    return { products: data.products }
+};
 
+const store = createStore(reducer, initialState);
+
+export default store;

@@ -19,61 +19,63 @@ export default function ProductScreen() {
         <div>
             <Link to="/">Back to result</Link>
             <div className="row top">
-                <div className="col-2">
+                <div className="col-1 textAlignCenter">
                     <img className="large" src={productSearched.image} alt={productSearched.name}/>
                 </div>
-                <div className="col-1">
-                    <ul>
-                        <li>
-                            <h1>{productSearched.name}</h1>
-                        </li>
-                        <li>
-                            <MainRating rating={productSearched.rating} numReviews={productSearched.numReviews}/>
-                        </li>
-                        <li>
-                            Price : {Intl.NumberFormat("en-US", 
-                                {style: "currency", 
-                                currency: "USD"}).format(Number(productSearched.price)) === '$0.00'? 
-                                'Sem informação'
-                                : Intl.NumberFormat("en-US", 
-                                {style: "currency", 
-                                currency: "USD"}).format(Number(productSearched.price))}
-                        </li>
-                        <li> Description:
-                            <p>{productSearched.description}</p>
-                        </li>
-                    </ul>
-                </div>
-                <div className="col-1">
-                    <div className="card card-body" >
-                        <ul>
+                <div className="row top col-1">
+                    <div className="col-1">
+                        <ul className="textAlignCenter">
                             <li>
-                                <div className="row">
-                                    <div>Price</div>
-                                    <div className="card-price">
-                                        {Intl.NumberFormat("en-US", {
-                                            style: "currency", 
-                                            currency: "USD"}).format(Number(productSearched.price))
-                                        }
-                                    </div>
-                                </div>
+                                <h1>{productSearched.name}</h1>
                             </li>
                             <li>
-                                <div className="row">
-                                    <div>Status</div>
-                                    <div>
-                                        {productSearched.countInStock > 0 ? (
-                                            <span className="success">In Stock</span>
-                                        ) : (
-                                            <span className="danger">Unavailable</span>
-                                        )}
-                                    </div>
-                                </div>
+                                <MainRating rating={productSearched.rating} numReviews={productSearched.numReviews}/>
                             </li>
                             <li>
-                                <button className="primary block">Add to Cart</button>
+                                Price : {Intl.NumberFormat("en-US", 
+                                    {style: "currency", 
+                                    currency: "USD"}).format(Number(productSearched.price)) === '$0.00'? 
+                                    'Sem informação'
+                                    : Intl.NumberFormat("en-US", 
+                                    {style: "currency", 
+                                    currency: "USD"}).format(Number(productSearched.price))}
+                            </li>
+                            <li> Description:
+                                <p>{productSearched.description}</p>
                             </li>
                         </ul>
+                    </div>
+                    <div className="col-1">
+                        <div className="card card-body margin-top-1rem" >
+                            <ul>
+                                <li>
+                                    <div className="row">
+                                        <div>Price</div>
+                                        <div className="card-price">
+                                            {Intl.NumberFormat("en-US", {
+                                                style: "currency", 
+                                                currency: "USD"}).format(Number(productSearched.price))
+                                            }
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="row">
+                                        <div>Status</div>
+                                        <div>
+                                            {productSearched.countInStock > 0 ? (
+                                                <span className="success">In Stock</span>
+                                            ) : (
+                                                <span className="danger">Unavailable</span>
+                                            )}
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button className="primary block">Add to Cart</button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
